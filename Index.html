@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Estatísticas</title>
+    <link rel="stylesheet" href="arquivo.css">
+</head>
+
+<body>
+    <h1>Calculadora de Estatísticas</h1>
+    <p>Insira uma lista de números separados por vírgula.</p>
+    <form onsubmit="calculate(); return false;">
+        <label for="numbers">Números:</label>
+        <input type="text" name="numbers" id="numbers" />
+        <button type="submit">Calcular</button>
+    </form>
+    <div class="results">
+        <p>
+            A <dfn>média</dfn> de uma lista de números é a média, calculada
+            pegando a soma de todos os números e dividindo-a pela contagem de números.
+        </p>
+        <p class="bold">Média: <span id="mean"></span></p>
+        <p>
+            A <dfn>mediana</dfn> de uma lista de números é o número que aparece
+            no meio da lista, quando classificado do menor para o maior.
+        </p>
+        <p class="bold">Mediana: <span id="median"></span></p>
+        <p>
+            O <dfn>modo</dfn> de uma lista de números é o número que aparece com mais
+            frequência na lista.
+        </p>
+        <p class="bold">Modo: <span id="mode"></span></p>
+        <p>
+            O <dfn>intervalo</dfn> de uma lista de números é a diferença entre os
+            maiores e menores números na lista.
+        </p>
+        <p class="bold">Intervalo: <span id="range"></span></p>
+        <p>
+            A <dfn>variância</dfn> de uma lista de números mede o quão distantes os valores
+            estão da média, em média.
+        </p>
+        <p class="bold">Variância: <span id="variance"></span></p>
+        <p>
+            O <dfn>desvio padrão</dfn> de uma lista de números é a raiz quadrada
+            da variância.
+        </p>
+        <p class="bold">
+            Desvio Padrão: <span id="standardDeviation"></span>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
